@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.menu-header ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu-header{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.menu{
+			width: 100%;
+			display: flex;
+		}
+		.menu .menu-item{
+			position: relative;
+			width: 13%;
+		}
+		.menu .menu-item:hover>.sub-menu{
+			visibility: visible;
+			-ms-transform: scale3d(1,1,1);
+			-webkit-transform: scale3d(1,1,1);
+			transform: scale3d(1,1,1);
+		}
+		.menu-item a{
+			position: relative;
+			display: block;
+			line-height: 50px;
+			padding: 0 2px;
+			color: #535353;
+			text-decoration: none;
+		}
+		.menu-item .sub-menu {
+			width: 100%;
+			position: absolute;
+			background: rgba(255,255,255,0.95);
+			visibility: hidden;
+			top: 100%;
+			left: 0;
+			box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+			-ms-transform-origin: top;
+			-webkit-transform-origin: top;
+			transform-origin: top;
+			-ms-transform: scale3d(1,0,1);
+			-webkit-transform: scale3d(1,0,1);
+			transform: scale3d(1,0,1);
+			-ms-transition-duration: 0.5s;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+			z-index: 10;
+		}
+		.sub-menu li a {
+			line-height: 34px;
+			width: 100%;
+			border-bottom: 1px solid rgba(0,0,0,0.03);
+		}
+		.menu-item a:hover{
+			background: #ff6fa2;
+			color: #fff;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<nav class="menu-header">
+		<ul id="menu-header" class="menu">
+			<li class="menu-item">
+				<a title="精品源码" href="javascript:;">
+					&nbsp;<i class="fa fa-file-code-o" aria-hidden="true"></i>
+					精品源码
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a title="PHP源码" href="javascript:;">&nbsp;PHP源码</a>
+					</li>
+					<li>
+						<a title="wordpress主题插件" href="javascript:;">&nbsp;wordpress主题插件</a>
+					</li>
+					<li>
+						<a title="discuz模板插件" href="javascript:;">&nbsp;discuz模板插件</a>
+					</li>
+					<li>
+						<a title="织梦dedecms模板" href="javascript:;">&nbsp;织梦dedecms模板</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;java源码</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item">
+				<a title="电子书" href="javascript:;">
+					&nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+					电子书
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a title="计算机" href="javascript:;">&nbsp;计算机</a>
+					</li>
+					<li>
+						<a title="数学" href="javascript:;">&nbsp;数学</a>
+					</li>
+					<li>
+						<a title="经济管理" href="javascript:;">&nbsp;经济管理</a>
+					</li>
+					<li>
+						<a title="励志成功" href="javascript:;">&nbsp;励志成功</a>
+					</li>
+					<li>
+						<a title="时尚生活" href="javascript:;">&nbsp;时尚生活</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item">
+				<a title="web前端素材" href="javascript:;">
+					&nbsp;<i class="fa fa-code" aria-hidden="true"></i>
+					web前端素材
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a title="菜单导航" href="javascript:;">&nbsp;菜单导航</a>
+					</li>
+					<li>
+						<a title="相册代码" href="javascript:;">&nbsp;相册代码</a>
+					</li>
+					<li>
+						<a title="焦点图" href="javascript:;">&nbsp;焦点图</a>
+					</li>
+					<li>
+						<a title="时间日期" href="javascript:;">&nbsp;时间日期</a>
+					</li>
+					<li>
+						<a title="广告代码" href="javascript:;">&nbsp;广告代码</a>
+					</li>
+					<li>
+						<a title="在线客服" href="javascript:;">&nbsp;在线客服</a>
+					</li>
+					<li>
+						<a title="图片特效" href="javascript:;">&nbsp;图片特效</a>
+					</li>
+					<li>
+						<a title="tab标签" href="javascript:;">&nbsp;tab标签</a>
+					</li>
+					<li>
+						<a title="jquery特效" href="javascript:;">&nbsp;jquery特效</a>
+					</li>
+					<li>
+						<a title="bootstrap" href="javascript:;">&nbsp;bootstrap</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;其它特效</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item">
+				<a title="精品教程" href="javascript:;">
+					&nbsp;<i class="fa fa-delicious" aria-hidden="true"></i>
+					精品教程
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="javascript:;">&nbsp;PHP</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;Linux</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;Python</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;前端开发</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;其它</a>
+					</li>
+				</ul>
+			</li>
+			<li  class="menu-item">
+				<a href="javascript:;">
+					&nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+					技术文章
+				</a>
+				<ul class="sub-menu">
+					<li>
+						<a href="javascript:;">&nbsp;Linux</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;响应式设计</a>
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;网站架构</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item">
+				<a title="好文分享" href="javascript:;">
+					&nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+					好文分享
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="javascript:;">
+					&nbsp;<i class="fa fa-book" aria-hidden="true"></i>
+					热点资讯
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<script>
+	var arr = ["1","2","3"]
+	var arr1 = ["a","b","c"]
+	var arr2 = ["#","@","$"]
+
+	var newArr = []
+	let b=new Set()
+  	let c=[];
+	arr.forEach(a1=>{
+		arr1.forEach(a2=>{
+			arr2.forEach(a3=>{
+				newArr.push(a1,a2,a3)
+			})
+		})
+	})
+
+	newArr.forEach(function (value,key,arr){
+        b.add(value)
+  	})
+  	b.forEach(function (value,key,set) {
+    	c.push(value)
+  	})
+	console.log(newArr)
+  	console.log(b)
+  	console.log(c)
+
+
+	function a(...arrs){
+		console.log(innerA('', arrs)) 
+	}
+
+	function innerA(prefix,arrs){
+		const [first,...rest] = arrs;
+		if (!rest.length) {
+			return first.map(i => prefix+i)
+		}
+
+		return first.reduce((acc,i)=>{
+			acc = acc.concat(innerA(prefix+i, rest));
+			return acc;
+		},[])
+	}
+	a(["1","2","3"],["a","b","c"],["#","@","$"])
+
+	//reduce: es5出现的一个方法。常用于数组的迭代。有返回值。
+	
+	 // filter：过滤掉不符合条件的数组元素，返回所有符合条件的数组元素组成的新的数组。有返回值。
+		// 	 使用形式：[].filter(function(){
+		// 　　　　　　　 })
+	 // find
+
+	 // 没有部署 Iterator 接口的类似数组的对象，扩展运算符就无法将其转为真正的数组。
+	 // 具有 Iterator 接口的对象:Map 和 Set 结构，Generator 函数
+
+	 // 1.克隆数组
+	 		//var a=[1,2]
+			// var b =[...a]
+			//b    (2) [1, 2]
+	// 2.合并数组，或者将a数组混入到b数组中去
+			// var a=[1,2]
+			// var b = [8,...a,9]
+			//b   = [8, 1, 2, 9]
+	// 3.字符串转数组
+			// var s = 'nice'
+			// var a = [...s]
+			//a   = ["n", "i", "c", "e"]
+	// 4.与解构赋值结合，生成数组  如果将扩展运算符用于数组赋值，只能放在参数的最后一位，否则会报错。
+			// const [a,...b]=[1,2,3]
+			//a=1,b=[2,3]
+	// 或者在函数里面某个参数没有传值的情况下，就赋值空数组
+			// function a ([m,...n]){console.log(m,n)}
+			// a([1])
+			//打印出  1 []
+	
+	// 可以将数组转换为参数序列		
+	// function add(x, y) {
+	// 		return x + y;
+	// }
+	// const numbers = [4, 38];
+	// add(...numbers) // 42		
+
+
+
+	// 对象中的扩展运算符(...)用于取出参数对象中的所有可遍历属性，拷贝到当前对象之中
+	// let bar = { a: 1, b: 2 };
+	// let baz = { ...bar }; // { a: 1, b: 2 }
+	// let bar = { a: 1, b: 2 };
+	// let baz = Object.assign({}, bar); // { a: 1, b: 2 }
+
+	// let bar = {a: 1, b: 2};
+	// let baz = {...bar, ...{a:2, b: 4}};  // {a: 2, b: 4}
+
+	// Object.assign方法用于对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象（target）。
+	// Object.assign方法的第一个参数是目标对象，后面的参数都是源对象。(如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性)。
+
+
+</script>
+</body>
+</html>
